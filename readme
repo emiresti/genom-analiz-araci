@@ -1,0 +1,20 @@
+# 🧬 NCBI Genom Veri ve GC Oranı Analiz Aracı
+
+Bu proje, biyoinformatik analizleri kolaylaştırmak amacıyla geliştirilmiş interaktif bir web uygulamasıdır. Kullanıcıların NCBI veritabanı üzerinden istedikleri gen dizilimlerini (FASTA formatında) otomatik olarak çekmelerine ve temel nükleotit istatistiklerini hesaplamalarına olanak tanır.
+
+## 🚀 Özellikler
+- **Otomatik Veri Çekme:** NCBI Entrez API kullanılarak girilen gen adına (örn: BRCA1, TP53) göre veritabanı sorgulaması.
+- **Dizi Analizi:** Çekilen FASTA diziliminin anlık olarak GC oranı (% Guanin-Sitozin) ve toplam baz uzunluğu hesaplaması.
+- **Dışa Aktarma:** Analiz edilen ham sekans verisinin `.fasta` formatında bilgisayara indirilmesi.
+
+## 🛠️ Kullanılan Teknolojiler
+- **Python 3**
+- **Streamlit** (Web arayüzü ve deploy için)
+- **Biopython** (NCBI Entrez bağlantısı ve sekans okuma işlemleri)
+
+## 💻 Kurulum ve Çalıştırma
+Projeyi kendi bilgisayarınızda çalıştırmak için:
+
+1. Gerekli kütüphaneleri yükleyin:
+   ```bash
+   pip install -r requirements.txt
